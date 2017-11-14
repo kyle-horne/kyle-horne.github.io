@@ -1,1 +1,3 @@
+name: Kyle Horne
 theme: jekyll-theme-cayman
+permalink: /blog/:year/:month/:day/:title
