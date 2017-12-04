@@ -7,6 +7,17 @@ a {
   color: #18BC9C;
 }
 
+.btn-primary, .btn-primary:not([disabled]):not(.disabled):active, .btn-primary.focus, .btn-primary:focus {
+  background-color: #18BC9C;
+  border-color: #18BC9C;
+  box-shadow: none;
+}
+
+.btn-primary:hover {
+  background-color: #0f7864;
+  border-color: #128f76;
+}
+
 a:hover {
   color: #0f7864;
 }
@@ -167,4 +178,12 @@ nav .nav-item:last-child {
   -ms-transform: scale(1);
   transform: scale(1);
   background-color: rgba(0,0,0,0.4);
+}
+
+.posts {
+  list-style: none;
+}
+
+.posts li div.float-left {
+  width: 125px;
 }

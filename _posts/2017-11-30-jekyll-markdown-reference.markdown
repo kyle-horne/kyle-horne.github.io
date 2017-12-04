@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-02-12 17:50:00
-categories: main
+title:  "Jekyll Markdown Reference"
+date:   2017-11-30 17:30:00
+categories: reference
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

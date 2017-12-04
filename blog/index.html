@@ -1,12 +1,15 @@
 ---
 layout: default
-title: Blog
+title: Full Archives
 ---
-	<h1>{{ page.title }}</h1>
-	<p class="text-muted">Blog posts about programming.</p>
-	<hr/>
-	<ul class="posts">
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+
+<h1>{{ page.title }}</h1>
+<p class="text-muted">Blog posts about programming.</p>
+<hr/>
+
+<h2>2017</h2>
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><div class="float-left">{{ post.date | date_to_string }}</div><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
