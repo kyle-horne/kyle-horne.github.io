@@ -8,13 +8,11 @@ title: {{ site.name }}
 <hr/>
 
 {% for post in site.posts %}
-<div class="well">
-  <h2>{{ post.title }}</h2>
-  <p class="meta">{{ post.date | date_to_string }}</p>
+<h2>{{ post.title }}</h2>
+<p class="meta text-muted"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</p>
 
-  <p>{{ post.excerpt }}</p>
+<p>{{ post.excerpt }}</p>
 
-  <p><b><a href="{{ post.url }}">Read More</a></b></p>
-</div>
+<p><b><a href="{{ post.url }}">Read More</a></b></p>
 <hr/>
 {% endfor %}
