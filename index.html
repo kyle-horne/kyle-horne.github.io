@@ -4,7 +4,7 @@ title: {{ site.name }}
 ---
 
 <h1>Welcome!</h1>
-<p class="text-muted">Hello there. Please check out some of my recent blog posts below. Also feel free to take a look at the Projects tab above.</p>
+<p class="text-muted">Hello there. Please check out some of my recent blog posts below. Feel free to take a look at the Projects in the navigation menu above.</p>
 <hr/>
 
 {% for post in site.posts %}
@@ -14,7 +14,7 @@ title: {{ site.name }}
 
   <p>{{ post.excerpt }}</p>
 
-  <a href="{{ post.url }}" class="btn btn-primary">Read More</a>
+  <p><b><a href="{{ post.url }}">Read More</a></b></p>
 </div>
 <hr/>
 {% endfor %}
