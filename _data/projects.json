@@ -1,0 +1,26 @@
+[
+{
+  "url": "twitchtv-json-api",
+  "name": "Twitchtv JSON API",
+  "icon": "twitch",
+  "info": "Show list of Twitchtv channels, toggle between online and offline, and provide a filter search."
+},
+{
+  "url": "wikipedia-viewer",
+  "name": "Wikipedia Viewer",
+  "icon": "wikipedia-w",
+  "info": "Display random Wikipedia article or retrieve list of articles based on search term."
+},
+{
+  "url": "local-weather",
+  "name": "Local Weather App",
+  "icon": "snowflake-o",
+  "info": "Show local weather based on geolocation."
+},
+{
+  "url": "random-quote-machine",
+  "name": "Random Quote Machine",
+  "icon": "quote-right",
+  "info": "Load random quote and tweet it."
+},
+]

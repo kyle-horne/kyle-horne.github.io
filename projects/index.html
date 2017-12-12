@@ -1,9 +1,43 @@
 ---
 layout: default
 title: Programming Projects
+description: Click on any of the projects below to view a demo.
 ---
 <h1>{{ page.title }}</h1>
-<p class="text-muted">A collection of projects.</p>
+<p class="text-muted">{{ page.description }}</p>
 <hr/>
 
-{% include page-projects.html %}
+<div class="row">
+
+  {% for project in site.data.projects %}
+
+  <div class="col-lg-4 col-md-6">
+    <div class="project">
+      <a href="/{{ project.url }}" target="_blank">
+        <div class="hovereffect text-center">
+
+          <h2><i class="fa fa-star" aria-hidden="true"></i>Project<i class="fa fa-star" aria-hidden="true"></i></h2>
+          <p class="project-type">freeCodeCamp</p>
+          <i class="fa fa-{{ project.icon }} fa-3x" aria-hidden="true"></i>
+          <p>{{ project.name }}</p>
+
+          <div class="overlay">
+             <p class="info">View Demo</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{ project.info }}</p>
+        </div>
+      </a>
+      <div class="card-footer">
+        <div class="float-left">
+          <small class="text-muted">&lt;/&gt; JavaScript</small>
+        </div>
+        <small><a href="https://github.com/kyle-horne/{{ project.url }}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Repository<a/></small>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+
+</div>
