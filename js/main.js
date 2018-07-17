@@ -9,4 +9,10 @@ $(document).ready(function(){
     $('.navbar-nav > li.nav-item > a[href="'+pathname+'"]').parent().addClass('active');
   }
 
+  //scrollspy sidebar
+  $( window ).scroll(function() {
+    console.log($('#left-sidebar').offset());
+  });
+
+  
 });
